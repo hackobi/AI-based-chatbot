@@ -13,24 +13,25 @@ The dataset used to train this version of the bot is the [Cornell Movie Dialogue
 ## Setup
 
 Create temporary working directory prior to training
-'mkdir working_dir'
+`mkdir working_dir`
 
 Download test/train data from Cornell Movie Dialog Corpus
-'cd data/
-bash pull_data.sh'
+
+`cd data/
+bash pull_data.sh`
 
 ## Training
 
 edit seq2seq.ini file to set 
-'mode = train'
+``mode = train``
 
 Once you've set the the model in training mode run the code:
 
-'python execute.py'
+```python execute.py```
 
 afterwards, you can go back and edit the seq2seq.ini file and set it to 
 
-'mode = test'
+```mode = test```
 
 in order to test the bot. Note that you don't have to wait for the training to end in order to start testing it.
 
@@ -38,15 +39,15 @@ in order to test the bot. Note that you don't have to wait for the training to e
 
 In order to run the bot from a browser run 
 
-'python ui/app.py'
+```python ui/app.py```
 
 you'll then see the message
-#        "Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)"
+``    "Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)"``
 
 
 copy the address and open it in a browser.
 
-You can change the port in app.py in the folder [python ui]()
+You can change the port in app.py in the folder [ui](https://github.com/hackobi/AI-based-chatbot/tree/master/ui)
 
 
 Below you'll find a compilation of other great chatbot implementations for reference.
